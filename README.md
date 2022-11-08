@@ -1,5 +1,5 @@
 
-https://examproject-altschool.vercel.app/
+https://exam-alt.vercel.app/
 
 
 my app link
