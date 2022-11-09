@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { useNavigate } from "react-router-dom";
-//import ReactPaginate from "react-paginate";
+
 import Repos from "./Repos";
 import "./style.css";
 import axios from "axios";
@@ -12,7 +11,7 @@ function Repo() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [userPerPage] = useState(3);
-  //get my repos
+ 
   const indexOfLastUser = currentPage * userPerPage;
   const indexOfFirstUser = indexOfLastUser - userPerPage;
   const currentUser = user.slice(indexOfFirstUser, indexOfLastUser);
@@ -36,7 +35,7 @@ function Repo() {
     <>
       <div className="all-repo">
         <h1 className="rep">My Repositories</h1>
-        <Repos user={currentUser} loading={loading} />
+        <Repos  user={currentUser} loading={loading} />
         <Pagination
           userPerPage={userPerPage}
           totalUser={user.length}

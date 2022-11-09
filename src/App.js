@@ -15,6 +15,7 @@ function App() {
     <Helmet>
     <meta charset="utf-8" />
       <title>Github Api Repo</title>
+     
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
       name="description"
@@ -30,8 +31,8 @@ function App() {
        
        <Link to="..">Home</Link> 
        <Link to="/Repo">Repo</Link>
-       <Link to="/Error404">Error</Link>
-       <Link to="/ErrorBound">ErrorBoundary</Link>
+       <Link to="/Error404">About us</Link>
+       <Link to="/ErrorBound">Arrgh</Link>
      </nav>
      <footer className="foot">Copyright: Oladosu 2022</footer>
       <Routes>

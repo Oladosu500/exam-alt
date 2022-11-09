@@ -5,7 +5,7 @@ import { format } from 'date-fns'
 const Repos = ({user, loading}) => {
  
   if(loading) {
-    <h2>Loading...</h2>
+    <h2 className="load">Loading...</h2>
   }
 
   return <> {user.map(user => (

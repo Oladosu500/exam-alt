@@ -76,8 +76,13 @@
 .rep1 {
   margin: auto;
   padding: 4.5px;
-  color: rgb(184, 153, 15);
+  color: rgb(235, 14, 14);
   background-color: chartreuse;
+  width: 150px;
+  height:80px
+  
+
+  
 }
 .pagination a {
   display: inline;
@@ -105,3 +110,50 @@
 .all-repo {
   margin: auto;
 }
+
+.err {
+  color: crimson;
+  font-weight: bolder;
+ align-content: center;
+  
+ 
+}
+.err-cont {
+  border: 2px solid white;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+ 
+  transform: translate(-50%, -50%);
+  width: 200px;
+  justify-self: center;
+  background-color: gray;
+  padding: 10px;
+  }
+  .err-cont a {
+    color: rgb(83, 68, 68);
+    font-weight: bolder;
+    align-content: center;
+    
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(24, 36, 199);
+    border-radius: 8px;
+    padding: 10px;
+
+  }
+  .err-cont a:hover {
+    background-color: antiquewhite;
+    color: black;
+  }
+  .load{
+    color: aliceblue;
+  }
+
+  .rep1-cont {
+    position: fixed;
+    top: 50%;
+    left: 50%
+
+  }

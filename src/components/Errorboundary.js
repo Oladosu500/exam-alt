@@ -18,9 +18,11 @@ export class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
+        <div className="rep1-cont">
         <div className="rep1">
           <strong>Warning!</strong> This alert box shows ErrorBoundary in
           action.
+        </div>
         </div>
       );
     }
