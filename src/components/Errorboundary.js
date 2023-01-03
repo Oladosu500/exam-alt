@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import "./style.css"
+import "./style.css";
 
 export class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hasError: true
+      hasError: true,
     };
   }
 
   static getDerivedStateFrontError(error) {
     return {
-      hasError: false
+      hasError: false,
     };
   }
 
@@ -19,10 +19,10 @@ export class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <div className="rep1-cont">
-        <div className="rep1">
-          <strong>Warning!</strong> This alert box shows ErrorBoundary in
-          action.
-        </div>
+          <div className="rep1">
+            <strong>Warning!</strong> This alert box shows ErrorBoundary in
+            action.
+          </div>
         </div>
       );
     }

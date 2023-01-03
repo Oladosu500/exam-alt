@@ -5,11 +5,14 @@
   color: rgb(16, 16, 90);
   border-radius: 16px 16px 0px 0px;
   font-weight: bolder;
+  justify-content: center;
 }
 .item-art img {
   height: 80px;
   width: 80px;
   border-radius: 50%;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .item-all {
@@ -19,7 +22,7 @@
   border-radius: 16px;
   padding: 10px;
   background-color: rgb(24, 26, 148);
-  justify-items: center;
+  justify-content: center;
 }
 .item-repo {
   color: rgba(5, 5, 59, 0.986);
@@ -39,10 +42,12 @@
 }
 
 .container {
-  display: inline-flex;
-  margin: auto;
-  padding: 20px;
+  display: inline-block;
+  flex-wrap: flex;
+
   border-spacing: 20px;
+
+  padding: 20px;
 }
 .red {
   background-color: red;
@@ -62,15 +67,8 @@
 }
 
 .rep {
-  margin: auto;
   padding: 4.5px;
   color: rgb(255, 255, 255);
-}
-
-.nav-bar {
-  background-color: grey;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  padding: 20px 25px;
 }
 
 .rep1 {
@@ -79,44 +77,54 @@
   color: rgb(235, 14, 14);
   background-color: chartreuse;
   width: 150px;
-  height:80px
-  
-
-  
+  height: 80px;
 }
-.pagination a {
+.paginationBttns a {
   display: inline;
-  color: rgb(24, 26, 148);
+  color: rgb(180, 180, 211);
   padding: 11px;
   text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.pagination a:hover {
-  background-color: rgba(5, 5, 59, 0.986);
-  color: aliceblue;
+.paginationBttns a:hover {
+  background-color: rgba(216, 205, 205, 0.986);
+  color: rgb(4, 9, 82);
 }
-.pagination {
-  align-self: center;
-  background-color: aliceblue;
+.paginationBttns {
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
   display: flex;
   text-align: center;
   list-style-type: none;
-  width: 200px;
-  margin: auto;
-  padding: 20px;
+  width: 80%;
+  height: 40px;
+}
+.paginationActive a {
+  background-color: rgba(216, 205, 205, 0.986);
+  color: rgb(4, 9, 82);
 }
 
+.paginationDisabled a {
+  background-color: rgba(216, 205, 205, 0.986);
+  color: rgb(4, 9, 82);
+  cursor: not-allowed;
+}
 .all-repo {
   margin: auto;
+  padding: 40px;
+
+  width: 90%;
 }
 
 .err {
   color: crimson;
   font-weight: bolder;
- align-content: center;
-  
- 
+  align-content: center;
 }
 .err-cont {
   border: 2px solid white;
@@ -124,36 +132,31 @@
   position: fixed;
   top: 50%;
   left: 50%;
- 
+
   transform: translate(-50%, -50%);
   width: 200px;
   justify-self: center;
   background-color: gray;
   padding: 10px;
-  }
-  .err-cont a {
-    color: rgb(83, 68, 68);
-    font-weight: bolder;
-    align-content: center;
-    
-    text-decoration: none;
-    font-size: 30px;
-    background-color: rgb(24, 36, 199);
-    border-radius: 8px;
-    padding: 10px;
+}
+.err-cont a {
+  color: rgb(83, 68, 68);
+  font-weight: bolder;
+  align-content: center;
 
-  }
-  .err-cont a:hover {
-    background-color: antiquewhite;
-    color: black;
-  }
-  .load{
-    color: aliceblue;
-  }
+  text-decoration: none;
+  font-size: 30px;
+  background-color: rgb(24, 36, 199);
+  border-radius: 8px;
+  padding: 10px;
+}
+.err-cont a:hover {
+  background-color: antiquewhite;
+  color: black;
+}
 
-  .rep1-cont {
-    position: fixed;
-    top: 50%;
-    left: 50%
-
-  }
+.rep1-cont {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
