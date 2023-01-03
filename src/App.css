@@ -1,7 +1,10 @@
 body {
-  background-color: rgb(11, 16, 44);
-
+  margin: 0;
   padding: 10px;
+  
+  background-color: rgb(5, 5, 36);
+
+ 
   height: 100%vh;
 }
 
@@ -15,13 +18,15 @@ body {
 }
 
 .nav-bar {
-  background-color: rgb(204, 204, 204, 0.5);
+  background-color: rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 15px;
 }
 
 .nav-bar a:hover {
-  color: brown;
+  background-color: rgb(24, 26, 148);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .nav-bar a.active {
