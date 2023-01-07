@@ -44,6 +44,7 @@
 .container {
   display: inline-block;
   flex-wrap: flex;
+  flex-direction: column;
 
   border-spacing: 20px;
 
@@ -66,16 +67,51 @@
   font-weight: bolder;
 }
 
-.rep {
-  padding: 4.5px;
+.abt {
   color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+.abt img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  
+}
+.abt span {
+  color:rgb(114, 114, 121);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+.abt a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.rep {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.rep a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .rep1 {
   margin: auto;
   padding: 4.5px;
-  color: rgb(235, 14, 14);
-  background-color: chartreuse;
+  color: rgb(156, 85, 85);
+  background-color: rgb(58, 85, 31);
   width: 150px;
   height: 80px;
 }
@@ -159,4 +195,21 @@
   position: fixed;
   top: 50%;
   left: 50%;
+}
+
+.load {
+  color: antiquewhite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border: 10px solid rgba(204, 189, 189, 0.5);
+  border-top: 10px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: spin linear infinite;
+  animation-delay: 10s;
+
+  z-index: 1000;
 }

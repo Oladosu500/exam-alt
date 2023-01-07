@@ -1,16 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  
-  background-color: rgb(5, 5, 36);
-
+  background-color: #101010;
  
   height: 100%vh;
 }
 
 .nav-bar a {
   display: inline-block;
-  color: rgb(24, 26, 148);
+  color:  #101010;
   padding: 11px;
   text-decoration: none;
   font-family: sans-serif;
@@ -24,11 +22,24 @@ body {
 }
 
 .nav-bar a:hover {
-  background-color: rgb(24, 26, 148);
+  background-color:  #101010;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 .nav-bar a.active {
-  color: rgb(255, 255, 255);
+  color: rgb(17, 16, 16);
+}
+
+.nav-bar img {
+ padding: 10px;
+}
+
+.mainimg {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: 0px;
+  top: 0px;
+  border-radius: 50%;
 }

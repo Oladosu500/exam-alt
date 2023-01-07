@@ -24,21 +24,25 @@ function Repo() {
       );
       setUser(res.data);
       setLoading(false);
+
+      console.log(res.data);
     };
     fetchUser();
   }, []);
+
 
   const paginate = ({ selected }) => {
     setCurrentPage(selected + 1);
   };
 
-  //the initial submission the pagination was not working but i have fixed it now
+  //the initial submission the pagination was not working but i have fixed it now using react paginate
+
   return (
     <>
     
       <div className="all-repo">
         <h1 className="rep">My Repositories</h1>
-        <Repos user={currentUser} loading={loading} />
+        <Repos  loading={loading} user={currentUser}  />
         <ReactPaginate
           previousLabel={"prev"}
           nextLabel={"next"}

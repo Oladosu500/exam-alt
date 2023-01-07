@@ -4,7 +4,9 @@ import { format } from "date-fns";
 
 const Repos = ({ user, loading }) => {
   if (loading) {
-    <h2 className="load">Loading...</h2>;
+    return <h2 className="load">Loading......</h2>;
+
+
   }
 
   return (
