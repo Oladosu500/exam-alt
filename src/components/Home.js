@@ -19,7 +19,7 @@ function Home() {
         <h3>Project Summary: </h3>
         <p>
           I use the github api to fetch data from github and display it on the page. I also use the pagination to display the data in a paginated form. I also use the error boundary to catch errors and display a custom error page.
-          
+          I promise to improve on this project in the future. Thank you.
 
         </p>
         {" "}
