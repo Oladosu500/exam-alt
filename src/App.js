@@ -26,6 +26,7 @@ function App() {
           rel="icon"
           href="https://avatars.githubusercontent.com/u/74744008?v=4"
         />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
       </Helmet>
       <div className="nav-bar">
         <img
@@ -40,7 +41,7 @@ function App() {
 
         <nav>
           <Link to="..">Home</Link>
-          <Link to="/Repo">Repo</Link>
+         
 
           <Link to="/ErrorBound">ErrorBound</Link>
           <Link to="/About">About</Link>
@@ -49,8 +50,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Repo" element={<Repo />} />
-        <Route path="/Repo" element={<Repo />} />
-        <Route path="/Repo" element={<Repo />} />
+        
 
         <Route path="ErrorBound" element={<ErrorBound />} />
         <Route path="Errorboundary" element={<ErrorBoundary />} />

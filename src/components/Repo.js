@@ -6,12 +6,19 @@ import axios from "axios";
 //import Pagination from "./Pagination";
 
 function Repo() {
+  // user, which is an array that will contain the repositories.
+//loading, which is a boolean indicating whether the repositories are being fetched or not.
+//currentPage, which is a number representing the current page of the pagination.
+//userPerPage, which is a number representing the number of repositories to show per page. */}
   const [user, setUser] = useState([]);
 
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [userPerPage] = useState(3);
 
+  //indexOfLastUser is the index of the last repository to show on the current page. It is calculated by multiplying the current page number by the number of repositories per page.
+//indexOfFirstUser is the index of the first repository to show on the current page. It is calculated by subtracting the number of repositories per page from indexOfLastUser.
+//currentUser is an array that contains the repositories to show on the current page. It is obtained by slicing the user array using indexOfFirstUser and indexOfLastUser as the start and end indices. */}
   const indexOfLastUser = currentPage * userPerPage;
   const indexOfFirstUser = indexOfLastUser - userPerPage;
   const currentUser = user.slice(indexOfFirstUser, indexOfLastUser);
