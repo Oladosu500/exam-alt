@@ -77,10 +77,9 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  
 }
 .abt span {
-  color:rgb(114, 114, 121);
+  color: rgb(114, 114, 121);
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
@@ -101,7 +100,7 @@
 .rep a {
   color: rgb(17, 16, 16);
   text-decoration: none;
-  background-color:rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
   padding: 5px;
   border-radius: 10px;
   font-weight: bold;
@@ -152,9 +151,6 @@
 }
 .all-repo {
   margin: auto;
-  
-
-  
 }
 
 .err {
@@ -214,20 +210,6 @@
   z-index: 1000;
 }
 
-
-input[type="radio"] {
-  display: none;
-}
-
-input[type="radio"] + label:before {
-  content: "\f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: rgb(194, 69, 69);
-  display: inline-block;
-  margin-right: 10px;
-}
-
-input[type="radio"]:checked + label:before {
+.product {
   color: #f4b400;
 }

@@ -28,6 +28,7 @@ function Home() {
         </p>
         <h3>Project Result: click <a href="/Repo" >Repo</a></h3>
         {" "}
+        <h3>Rate Me:</h3>
         <div><Rate value={3} max={5}/></div>
         
       </div>
