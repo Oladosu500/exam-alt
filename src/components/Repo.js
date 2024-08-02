@@ -46,11 +46,13 @@ function Repo() {
 
   return (
     <>
-    
+    <div><h1 className="rep">My Repositories</h1></div>
       <div className="all-repo">
-        <h1 className="rep">My Repositories</h1>
+        
         <Repos  loading={loading} user={currentUser}  />
-        <ReactPaginate
+        
+      </div>
+      <ReactPaginate
           previousLabel={"prev"}
           nextLabel={"next"}
           pageCount={Math.ceil(user.length / userPerPage)}
@@ -61,7 +63,6 @@ function Repo() {
           disabledClassName={"paginationDisabled"}
           activeClassName={"paginationActive"}
         />
-      </div>
     </>
   );
 }

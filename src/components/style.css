@@ -16,7 +16,7 @@
 }
 
 .item-all {
-  width: 350px;
+  width: 300px;
   display: block;
   flex: none;
   border-radius: 16px;
@@ -41,15 +41,6 @@
   font-weight: bold;
 }
 
-.container {
-  display: inline-block;
-  flex-wrap: flex;
-  flex-direction: column;
-
-  border-spacing: 20px;
-
-  padding: 20px;
-}
 .red {
   background-color: red;
   border-radius: 10px;
@@ -107,7 +98,6 @@
 }
 
 .rep1 {
-  margin: auto;
   padding: 4.5px;
   color: rgb(156, 85, 85);
   background-color: rgb(58, 85, 31);
@@ -117,7 +107,7 @@
 .paginationBttns a {
   display: inline;
   color: rgb(180, 180, 211);
-  padding: 11px;
+  padding: 6px;
   text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
@@ -133,14 +123,14 @@
   justify-content: center;
   padding: 10px;
   margin: auto;
+  margin-bottom: 20px;
   display: flex;
-  text-align: center;
   list-style-type: none;
-  width: 80%;
-  height: 40px;
+  width: 70%;
+  align-items: center;
 }
 .paginationActive a {
-  background-color: rgba(216, 205, 205, 0.986);
+  background-color: rgba(145, 34, 34, 0.986);
   color: rgb(4, 9, 82);
 }
 
@@ -150,9 +140,15 @@
   cursor: not-allowed;
 }
 .all-repo {
-  margin: auto;
+  display: flex;
+  row-gap: 20px;
+  column-gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-
+.p {
+  margin: 0;
+}
 .err {
   color: crimson;
   font-weight: bolder;
@@ -212,4 +208,23 @@
 
 .product {
   color: #f4b400;
+}
+
+@media (max-width: 600px) {
+  .all-repo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .item-all {
+    border-radius: 16px;
+    padding: 10px;
+    width: 300px;
+    justify-content: center;
+  }
 }
